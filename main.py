@@ -1,7 +1,7 @@
 from word2vec import Word2Vec
 
 # init dataset and model
-word2vec = Word2Vec(data_path='/mnt/d/OneDrive - GoBlitzAI/OneDrive - Accretive Wiz@Work Consultants/Projects/pytorch-SkipGram-master/data/HP_CORPUS.txt',
+word2vec = Word2Vec(data_path='/mnt/d/OneDrive - GoBlitzAI/OneDrive - Accretive Wiz@Work Consultants/Projects/pytorch-SkipGram/data/HP_CORPUS.txt',
                     vocabulary_size=50000,
                     embedding_size=300)
 

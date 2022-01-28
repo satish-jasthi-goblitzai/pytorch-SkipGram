@@ -35,7 +35,7 @@ def read_own_data(filename):
     :return:
     """
     print('reading data...')
-    with open(filename, 'r', encoding='utf-8') as f:
+    with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
         data = f.read().split()
     print('corpus size', len(data))
     return data
