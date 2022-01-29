@@ -22,14 +22,11 @@ else:
     print('Unknown OS')
 
 
-input_foler=r'D:\Work\R&D\CTFiles'
-img_folder=r'D:\Work\R&D\CTFiles\img'
-output_folder=r'D:\Work\R&D\CTFiles\txt'
+input_foler=r'/mnt/d/OneDrive - GoBlitzAI/OneDrive - Accretive Wiz@Work Consultants/Projects/pytorch-SkipGram/data/pdf_data'
+img_folder=r'/mnt/d/OneDrive - GoBlitzAI/OneDrive - Accretive Wiz@Work Consultants/Projects/pytorch-SkipGram/data/pdf_data_images'
+output_folder=r'/mnt/d/OneDrive - GoBlitzAI/OneDrive - Accretive Wiz@Work Consultants/Projects/pytorch-SkipGram/data/pdf_data_text'
 
 job_files = glob.glob(os.path.join(input_foler, '*.pdf'))
-
-if platform.system() == 'Windows':
-    pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
 def process_and_extract(img_info):
